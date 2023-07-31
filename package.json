@@ -1,0 +1,13 @@
+{
+  "name": "untref",
+  "version": "1.0.0",
+  "description": "Proyecto integrador web UNTREF School",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

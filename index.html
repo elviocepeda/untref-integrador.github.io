@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descripción del sitio para SEO" />
+    <meta name="author" content="Nombre del autor" />
+    <title>UntrefSchool - Instituto de Educación Primaria</title>
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;family=Belanosima&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body class="scrollbar-hide">
+    <header class="text-sm">
+      <nav class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div class="nav-title text-2xl color-untref-light p-4">
+            UntrefSchool
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check" class="cursor-pointer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links color-untref-light text-base text-center p-4">
+          <a href="#who" class="p-2">Quienes somos</a>
+          <a href="#why" class="p-2">¿Por qué elegirnos?</a>
+          <a href="#edu" class="p-2">Propuesta educativa</a>
+          <a href="#news" class="p-2">Últimas noticias</a
+          ><a href="./contact.html" class="p-2">Contactanos</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="who"
+        class="h-screen text-white py-16 overflow-y-scroll scrollbar-hide"
+      >
+        <div class="who-bg-image"></div>
+        <div class="container m-auto text-center px-8 sm:pt-16 md:px-8 h-full">
+          <h2 class="text-4xl font-bold text-gray-800 my-6">¿Quiénes somos?</h2>
+
+          <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">
+            Nuestra Filosofía
+          </h3>
+          <p
+            class="font-semibold text-gray-800 text-lg py-8 text-justify lg:px-40"
+          >
+            En UntrefSchool, nuestra filosofía educativa se fundamenta en el
+            compromiso de brindar una experiencia enriquecedora a cada
+            estudiante. Nos enorgullecemos de cultivar un entorno de aprendizaje
+            inclusivo y estimulante, donde la calidad educativa es
+            primordial.<br /><br />
+            Creemos fervientemente en fomentar la curiosidad y la creatividad en
+            nuestros alumnos, ya que consideramos que el pensamiento crítico y
+            la imaginación son pilares fundamentales para su desarrollo
+            integral. Aspiramos a que cada estudiante descubra y cultive sus
+            habilidades, sintiéndose motivado a explorar nuevos horizontes.
+            Nuestra visión va más allá de las aulas: anhelamos formar ciudadanos
+            responsables, respetuosos y comprometidos con la sociedad en la que
+            se desenvuelven.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="why"
+        class="h-screen text-white bg-untref-dark pt-16 overflow-y-scroll scrollbar-hide"
+      >
+        <div
+          class="container mx-auto flex flex-col md:justify-center items-center h-full"
+        >
+          <h2 class="text-4xl font-bold mb-8 text-center">
+            ¿Por qué Elegirnos?
+          </h2>
+          <p class="text-lg text-justify text-center mx-8 md:mx-40">
+            En nuestra institución, contamos con un equipo de docentes altamente
+            capacitados que se dedican a brindar una educación personalizada y
+            adaptada a las necesidades de cada alumno. Nuestra propuesta
+            educativa se basa en la innovación, la creatividad y el respeto por
+            la diversidad.
+          </p>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 color-untref-dark p-8 lg:p-16"
+          >
+            <div class="bg-untref-light p-4 rounded-lg md:p-16">
+              <img
+                src="./assets/profile.jpg"
+                alt="Autor de testimonio"
+                class="w-24 h-24 object-cover m-auto mb-4 rounded-full"
+              />
+              <blockquote class="relative">
+                <svg
+                  class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-300 dark:text-gray-700"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <div class="relative z-10">
+                  <p class="text-gray-800 sm:text-xl dark:text-white">
+                    <em>
+                      Estamos encantados con la institución de nuestros hijos.
+                      Sus docentes altamente capacitados brindan una educación
+                      personalizada que potencia las habilidades individuales.
+                      ¡Una propuesta innovadora que respeta la diversidad!
+                    </em>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <div class="bg-untref-light p-4 rounded-lg md:p-16">
+              <img
+                src="./assets/profile2.jpg"
+                alt="Autor de testimonio"
+                class="w-24 h-24 object-cover m-auto mb-4 rounded-full"
+              />
+              <blockquote class="relative">
+                <svg
+                  class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-300 dark:text-gray-700"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <div class="relative z-10">
+                  <p class="text-gray-800 sm:text-xl dark:text-white">
+                    <em>
+                      No podríamos estar más felices con la educación que
+                      reciben nuestros hijos en esta institución. La creatividad
+                      y el respeto por la diversidad se reflejan en cada clase.
+                      ¡Gracias a los docentes por su dedicación!
+                    </em>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="edu"
+        class="h-screen text-white bg-untref-dark pt-16 overflow-y-scroll scrollbar-hide"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center lg:justify-center h-full"
+        >
+          <h2 class="text-4xl font-bold mb-8 text-center">
+            Propuesta Educativa
+          </h2>
+          <p class="text-lg text-justify mx-8 text-center md:mx-40">
+            Nuestra propuesta educativa se centra en el desarrollo integral de
+            cada estudiante, promoviendo el aprendizaje activo, la participación
+            en proyectos y la adquisición de habilidades para la vida.
+            Fomentamos el trabajo en equipo, la curiosidad por aprender y el
+            pensamiento crítico.
+          </p>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8"
+          >
+            <div class="bg-untref-light p-4 rounded-lg">
+              <img
+                src="./assets/edu-read.jpg"
+                alt="Niño leyendo"
+                class="h-52 object-cover"
+              />
+            </div>
+            <div class="bg-untref-light p-4 rounded-lg">
+              <img
+                src="./assets/edu-write.jpg"
+                alt="Niño pensando"
+                class="h-52 object-cover"
+              />
+            </div>
+            <div class="bg-untref-light p-4 rounded-lg">
+              <img
+                src="./assets/edu-math.jpg"
+                alt="Niño en el pizarrón"
+                class="h-52 object-cover"
+              />
+            </div>
+            <div class="bg-untref-light p-4 rounded-lg">
+              <img
+                src="./assets/edu-social.jpg"
+                alt="Niños alrededor del globo terraqueo"
+                class="h-52 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="news"
+        class="h-screen color-untref-light bg-untref-dark pt-16 overflow-y-scroll scrollbar-hide"
+      >
+        <div class="mx-auto flex flex-col items-center">
+          <h2 class="text-4xl font-bold mb-4 pt-8 text-center">
+            Últimas Noticias
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <article class="bg-untref-dark p-8">
+              <img
+                src="./assets/news.jpg"
+                alt="Excursión al Parque Nacional"
+                class="h-80 w-full object-cover rounded-lg"
+              />
+              <h2 class="text-2xl font-bold my-4 text-justify">
+                Excursión al Parque Nacional
+              </h2>
+              <p class="text-lg text-justify">
+                Los estudiantes de quinto grado disfrutaron de una emocionante
+                excursión al Parque Nacional, donde pudieron aprender sobre la
+                flora y fauna de nuestra región. Fue una experiencia educativa y
+                divertida para todos.
+              </p>
+            </article>
+
+            <article class="bg-untref-dark p-8">
+              <img
+                src="./assets/news2.jpg"
+                alt="Feria de Ciencias"
+                class="w-full object-cover rounded-lg md:h-10 lg:h-80"
+              />
+              <h2 class="text-2xl font-bold my-4">Feria de Ciencias</h2>
+              <p class="text-lg text-justify">
+                La Feria de Ciencias fue todo un éxito. Nuestros jóvenes
+                científicos presentaron proyectos increíbles que demostraron su
+                creatividad y habilidades científicas. ¡Felicitaciones a todos
+                los participantes!
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

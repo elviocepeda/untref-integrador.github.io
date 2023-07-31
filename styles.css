@@ -1,0 +1,167 @@
+:root {
+  --var-orange: #fc7300;
+  --var-teal: #1f8a70;
+  --var-blue: #00425a;
+  --var-dark: #181823;
+  --var-light: #eff5f5;
+}
+
+@layer base {
+  :root {
+    --var-orange: #fc7300;
+    --var-teal: #1f8a70;
+    --var-blue: #00425a;
+    --var-dark: #181823;
+    --var-light: #eff5f5;
+  }
+}
+
+.bg-untref-orange {
+  background-color: var(--var-orange);
+}
+
+.bg-untref-teal {
+  background-color: var(--var-teal);
+}
+
+.bg-untref-blue {
+  background-color: var(--var-blue);
+}
+
+.bg-untref-dark {
+  background-color: var(--var-dark);
+}
+
+.bg-untref-light {
+  background-color: var(--var-light);
+}
+
+.color-untref-orange {
+  color: var(--var-orange);
+}
+
+.color-untref-teal {
+  color: var(--var-teal);
+}
+
+.color-untref-blue {
+  color: var(--var-blue);
+}
+
+.color-untref-dark {
+  color: var(--var-dark);
+}
+
+.color-untref-light {
+  color: var(--var-light);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--var-dark);
+  position: fixed;
+  z-index: 100;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  text-decoration: none;
+  margin: auto;
+}
+
+.nav > .nav-links > a:hover {
+  color: var(--var-orange);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.who-bg-image {
+  background-image: url(./assets/who.jpg);
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  filter: blur(8px);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1000px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    padding: 16px 10px;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav > .nav-links {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: var(--var-dark);
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .nav > #nav-check:checked ~ .nav-links {
+    display: block;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
